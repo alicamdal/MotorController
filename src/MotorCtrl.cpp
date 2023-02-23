@@ -46,5 +46,11 @@ void MotorController::setDirection(direction direct)
         gpio_set_level(this->m22, 1);
         gpio_set_level(this->m21, 0);
         break;
+    case STOP:
+        gpio_set_level(this->m11, 0);
+        gpio_set_level(this->m12, 0);
+        gpio_set_level(this->m22, 0);
+        gpio_set_level(this->m21, 0);
+        break;
     }
 }

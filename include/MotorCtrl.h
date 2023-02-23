@@ -20,8 +20,10 @@ public:
         FORWARD,
         BACKWARD,
         LEFTWARD,
-        RIGHTWARD
+        RIGHTWARD,
+        STOP
     };
+    direction class_director;
 
     void ctrlInit(motor_config_t config);
     void setDirection(direction direct);
